@@ -1,0 +1,20 @@
+server:
+  port: 8082
+
+spring:
+  main:
+    allow-bean-definition-overriding: true
+  application:
+    name: sofa-rpc-consumer
+com:
+  alipay:
+    sofa:
+      rpc:
+        registry-address: consul://127.0.0.1:8500
+        bolt-port: 8092
+
+logging:
+  file:
+    path: ./logs/consumer
+  level:
+    root: INFO

@@ -1,0 +1,19 @@
+server:
+  port: 8081
+
+spring:
+  main:
+    allow-bean-definition-overriding: true
+  application:
+    name: sofa-rpc-run
+
+logging:
+  file:
+    path: ./logs/run
+
+com:
+  alipay:
+    sofa:
+      rpc:
+        registry-address: consul://127.0.0.1:8500
+

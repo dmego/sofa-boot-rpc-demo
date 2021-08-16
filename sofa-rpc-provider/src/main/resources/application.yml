@@ -1,0 +1,20 @@
+server:
+  port: 8083
+
+spring:
+  main:
+    allow-bean-definition-overriding: true
+  application:
+    name: sofa-rpc-provider
+com:
+  alipay:
+    sofa:
+      rpc:
+        registry-address: consul://127.0.0.1:8500
+        bolt-port: 8093
+
+logging:
+  file:
+    path: ./logs/provider
+  level:
+    root: INFO
